@@ -1,9 +1,9 @@
-const Telegraf = require('telegraf');
-const Openai = require('openai');
-const { message } = require('telegraf/filters');
+const Telegraf = require('telegraf')
+const Openai = require('openai')
+const { message } = require('telegraf/filters')
 
-const telegramToken = process.env.TELEGRAM_TOKEN;
-const openaiKey = process.env.OPENAI_KEY;
+const telegramToken = '7496899662:AAHrXRrfZzCHx-h4LwS5qpsUZUvQchjyi3g'
+const openaiKey = 'sk-proj-65xXQIsCDkGt4Jvj4XiQT3BlbkFJKmdyZvYkVyokZv0RMuKo'
 
 const bot = new Telegraf.Telegraf(telegramToken)
 const configuration = new Openai.Configuration({
